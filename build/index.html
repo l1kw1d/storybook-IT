@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html manifest="taskbox.appcache">
+    <head>
+        <meta charset="utf-8">
+        <title>TaskBox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="graphics/taskbox.png">
+
+        <!-- iPhone < 5 non-retina startup image -->
+        <link href="graphics/taskbox-splash-320x480.png"
+              media="(device-width: 320px) and (device-height: 480px)
+                     and (-webkit-device-pixel-ratio: 1)"
+              rel="apple-touch-startup-image">
+
+        <!-- iPhone 6 startup image -->
+        <link href="graphics/taskbox-splash-750x1294.png"
+              media="(device-width: 375px) and (device-height: 667px)
+                     and (-webkit-device-pixel-ratio: 2)"
+              rel="apple-touch-startup-image">
+
+
+        <link rel="shortcut icon" href="graphics/taskbox.ico">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript" src="app.js"   charset="utf-8"></script>
+        <script type="text/javascript">
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '569cd163c88d9010b6000ad7');
+            t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+            t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
+        </script>
+    </body>
+</html>

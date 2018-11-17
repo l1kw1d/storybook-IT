@@ -1,0 +1,55 @@
+$top = 60px
+$bottom = 70px
+$width = 250px
+
+.FlyoutSidebar
+    position fixed
+    top $top
+    left 0
+
+    .innerAnimated
+        .shader
+            position fixed
+            top $top
+            right 0
+            bottom 0
+            z-index 999 
+            background-color rgba(0,0,0,0.5)
+            margin-bottom $bottom
+
+        .content
+            overflow hidden
+            position fixed
+            top $top
+            left 0
+            bottom 0
+            z-index 999 
+            margin-bottom $bottom
+            background-color white
+            overflow-y scroll
+            -webkit-overflow-scrolling touch
+            &::-webkit-scrollbar
+              display: none
+
+    .innerBasic
+        position fixed
+        top $top
+        left 0
+        right 0
+        bottom 0
+        z-index 999 
+        display flex
+
+        .shader
+            flex auto
+            background-color rgba(0,0,0,0.5)
+            margin-bottom $bottom
+
+        .content
+            width $width
+            background-color white
+            margin-bottom $bottom
+            overflow-y scroll
+            -webkit-overflow-scrolling touch
+            &::-webkit-scrollbar
+              display: none

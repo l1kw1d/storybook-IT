@@ -1,0 +1,44 @@
+.MailBox
+    flex auto
+    overflow-y scroll
+    -webkit-overflow-scrolling touch
+
+    .MailBoxItem
+        display block
+        padding 10px
+        border 1px solid transparent
+        border-bottom 1px solid #ccc
+        height 86px
+        overflow hidden
+
+        &.selected
+            border 1px solid red
+
+        .firstrow
+            display flex
+            height 30px
+            line-height 30px
+            
+            .date
+                width 80px
+                text-align right
+                flex-grow 0
+                flex-shrink 0
+
+            .subject
+                flex auto
+                color white
+                font-weight bold
+                overflow hidden
+
+        .participants
+            height 20px
+            line-height 20px
+            font-size 0.8em
+            margin-bottom 2px
+            overflow hidden
+            span
+                margin-right 10px
+
+        .summary
+            opacity 0.5
